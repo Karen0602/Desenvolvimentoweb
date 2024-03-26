@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <p>Cadastro</p>
+    <form>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Insira seu nome aqui..." size="20" maxlength="50" minlength="5" required>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Insira sua senha..." size="20">
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" size="2" min="0" max="130" value="4" step="5">
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade">
+        <label for="estado">UF</label>
+        <select name="UF" id="estado">  
+            <optgroup label="Sudeste">
+                <option value="São Paulo">SP</option>
+                <option value="Rio de Janeiro">RJ</option> 
+                <option value="Espirito Santo">ES</option>
+                <option value="Minas Gerais">MG</option> 
+           </optgroup>     
+           <optgroup label="Centro-Oeste">
+                <option value="Mato Grosso do Sul">MS</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Goiás">GO</option>
+                <option value="Distrito Federal">DF</option>
+           </optgroup>
+           <optgroup>   
+            <option value="Paraná">PR</option>
+            <option value="Santa Catarina">SC</option>
+           </optgroup>
+        </select>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="cor">Cor preferida</label>
+        <input type="color" name="cor" id="cor">
+
+        <br>
+        <label for="site">Site</label>
+        <input type="url" name="site" id="site">
+
+        <br>
+        <br>
+        <br>
+        
+
+        <label for="nivel">Nivel de conhecimento</label>
+        <input type="range" name="nivel" id="nivel" min="0" max="3">
+        <br>
+        <br>
+        <label for="arquivo">Anexar arquivo</label>
+        <br>
+        <input type="file" name="arquivo" id="arquivo">
+        <br>
+        <br>
+        <br>
+
+
+        <input type="submit" value="CADASTRAR">
+        <input type="reset" value="LIMPAR">
+    </form>
+    
+    
+</body>
+</html>
